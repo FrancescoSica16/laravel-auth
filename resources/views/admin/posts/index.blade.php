@@ -16,6 +16,7 @@
                 <tr>
                     <td>{{$post->title}}</td>
                     <td>{{$post->author}}</td>
+                    <td><a href="{{route('admin.posts.show', $post->id)}}">Vai al post</a></td>
                 </tr>
             
                 @empty
